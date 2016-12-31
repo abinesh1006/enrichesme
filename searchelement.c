@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a[20],m,c,i,s=0;
+    int a[20],m,c,i,count=0;
     scanf("%d",&m);
     for(i=0;i<m;i++)
     {
@@ -13,8 +13,8 @@ int main()
      {
           if(c==a[i])
           {
-              s++;
+              count++;
           }
      }
-        printf("%d times",s);
+        printf("%d times",count);
 }
