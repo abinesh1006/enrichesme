@@ -4,7 +4,7 @@
 int main()
 {
 
-    int a[10],res[10];
+    int a[30],res[30];
     int total,num,i,j=0;
     printf("total array elements");
     scanf("%d",&total);
