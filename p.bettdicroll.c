@@ -18,7 +18,6 @@ int main()
     }
      x=arr[i-1];
      y=arr[i];
-    printf("%d%d",x,y);
     i=i-2;
     int j;
     int sum=0;
