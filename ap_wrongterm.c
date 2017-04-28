@@ -31,10 +31,6 @@ int main()
             }
         }
     }
-    
-    
-    
-    
     for(j=0;j<len-1;j++)
     {
         res[z]=a[j+1]-a[j];
