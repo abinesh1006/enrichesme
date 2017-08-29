@@ -30,6 +30,12 @@ int main()
 }
 int check(int a,int b,int c)
 {
+    int f=1;
+    if(b>12){
+        printf("Invalid");
+        f=0;}
+    if(f==1){
+        
     int x=checkmonth(b,c);
     if((a<=x)&&a>=1)
     {
@@ -38,7 +44,7 @@ int check(int a,int b,int c)
     else{
         printf("Invalid");
         return 0;
-    }
+    }}
 
 }
 int dayfinder(int a,int b,int c)
