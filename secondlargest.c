@@ -1,16 +1,11 @@
 #include<stdio.h>
 int main(int a,char **b)
 {
-    int i,j,max1,max2;
+    int i,j,max1=-1,max2=-1;
     int arr[1000];
     for(i=1;i<a;i++)
     {
         arr[i]=atoi(b[i]);
-    }
-    max1=-1;
-    max2=-1;
-    for(i=1;i<a;i++)
-    {
         if(max1<arr[i])
         {
             max2=max1;
