@@ -10,7 +10,7 @@ int main()
       scanf("%d",&aa[i]);
   }
   
-  for(i=1;i<a;i++)
+  for(i=0;i<a;i++)
   {
       fla=0;
       for(j=i-1;j>=0;j--)
