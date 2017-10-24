@@ -30,13 +30,12 @@ int main()
 {
   int n;
   scanf("%d",&n);
-   long arr[100][100]={0};
-  int i,j,k=0;
-  for(i=0;i<=n;i++)
+  long arr[52][52]={0};
+  int i,j,k=1;
+  for(i=1;i<=n;i++)
   {
       arr[0][i]=k++;
-      arr[i][0]=0;
-      arr[i][n+1]=0;
+      
   }
   for(i=1;i<n;i++)
   {
@@ -45,7 +44,6 @@ int main()
           arr[i][j]=arr[i-1][j-1]+arr[i-1][j+1];
       }
   }
-  
   for(i=0;i<n;i++)
   {
       for(j=1;j<=n;j++)
