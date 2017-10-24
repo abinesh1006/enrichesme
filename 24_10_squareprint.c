@@ -22,7 +22,7 @@ Output:
 1 2 3 4
 2 4 6 3
 4 8 7 6
-8 11 14 7*/
+8 11 14 7 */
 #include<stdio.h>
 #include <stdlib.h>
 
