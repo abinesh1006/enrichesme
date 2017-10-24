@@ -1,12 +1,24 @@
-/*Square Pattern Printing For N
-Given N, print the pattern as described in the Example Input/Output.
-Input Format:
-The first line will contain N.
-Output Format:
-N lines will contain the required pattern.
-Boundary Conditions:
-1 <= N <= 50
-Example Input/Output 1:
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,i,j,k=1;
+    scanf("%d",&n);
+    long a[52][52]={0};
+    for(i=0;i<n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            a[i][j]= i==0 ? k++ : a[i-1][j-1]+a[i-1][j+1];
+            printf("%li ",a[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+/*
 Input:
 5
 Output:
@@ -23,34 +35,3 @@ Output:
 2 4 6 3
 4 8 7 6
 8 11 14 7 */
-#include<stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-  int n;
-  scanf("%d",&n);
-  long arr[52][52]={0};
-  int i,j,k=1;
-  for(i=1;i<=n;i++)
-  {
-      arr[0][i]=k++;
-      
-  }
-  for(i=1;i<n;i++)
-  {
-      for(j=1;j<=n;j++)
-      {
-          arr[i][j]=arr[i-1][j-1]+arr[i-1][j+1];
-      }
-  }
-  for(i=0;i<n;i++)
-  {
-      for(j=1;j<=n;j++)
-      {
-          printf("%li ",arr[i][j]);
-      }
-      printf("\n");
-  }
-
-}
