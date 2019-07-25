@@ -1,3 +1,4 @@
+//Sort the Given Number in descending order and swap last digit with first occuring even number
 #include<stdio.h>
 #include <stdlib.h>
 
